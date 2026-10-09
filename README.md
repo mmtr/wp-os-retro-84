@@ -4,14 +4,19 @@ A desktop theme for [OpenStation](https://github.com/WordPress/openstation) that
 
 ![Retro 84: a Dashboard window with a striped title bar on a dithered grey desk, and a white menu bar along the top](screenshots/desktop.png)
 
+## Download
+
+[Download Retro 84](https://github.com/mmtr/wp-os-retro-84/archive/refs/heads/main.zip) as a ZIP, or click **Code > Download ZIP** at the top of this page. The ZIP is the theme, ready to upload, with nothing to build.
+
+Keep it zipped. If your browser unzips downloads (Safari does by default), compress the folder again before you upload it.
+
 ## Install
 
 Needs an OpenStation version newer than 1.1.12.
 
-1. Download this repository as a ZIP: **Code > Download ZIP**.
-2. In WordPress, open OpenStation and go to **Preferences > Themes**.
-3. Drop the ZIP on the upload box.
-4. Pick **Retro 84**, then click **Apply Retro 84's recommended layout and effects**. That puts the dithered desk in place, shows the WordPress toolbar as a menu bar with the time, and clears Mio and the widgets off the desk.
+1. In WordPress, open OpenStation and go to **Preferences > Themes**.
+2. Drop the ZIP on the upload box, or click it and choose the ZIP.
+3. Pick **Retro 84**, then click **Apply Retro 84's recommended layout and effects**. That puts the dithered desk in place, shows the WordPress toolbar as a menu bar with the time, and clears Mio and the widgets off the desk.
 
 ## What's in it
 
