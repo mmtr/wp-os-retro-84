@@ -2,6 +2,8 @@
 
 A desktop theme for [OpenStation](https://github.com/WordPress/openstation) that turns WordPress into the first desktop most people ever saw: one bit per pixel, a dithered grey desk, striped title bars with a close box, and type drawn on a grid.
 
+**Try it live: https://wp-os-retro-84.space.fast**. WordPress runs in your browser, with nothing to install.
+
 ![Retro 84: a Dashboard window with a striped title bar on a dithered grey desk, and a white menu bar along the top](screenshots/desktop.png)
 
 ## Download
