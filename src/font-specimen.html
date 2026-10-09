@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Retro 84 pixel fonts</title>
+<style>
+@font-face {
+	font-family: 'OS Retro Chicago';
+	src: url('../fonts/os-retro-chicago.woff') format('woff');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'OS Retro Geneva';
+	src: url('../fonts/os-retro-geneva.woff') format('woff');
+	font-weight: 400;
+}
+
+/*
+ * The fonts are crisp at their designed size and whole multiples of it,
+ * when text starts on a whole CSS pixel. On macOS, the default font
+ * smoothing dilates every glyph by a fraction of a pixel; plain
+ * antialiasing draws these pixel-aligned outlines exactly.
+ */
+body {
+	margin: 0;
+	padding: 16px 24px;
+	background: #fff;
+	color: #000;
+	-webkit-font-smoothing: antialiased;
+	font-synthesis: none;
+}
+h1 {
+	margin: 0 0 16px;
+	font: 400 24px/32px 'OS Retro Chicago';
+}
+section {
+	margin: 0 0 20px;
+}
+.label {
+	margin: 0 0 6px;
+	padding: 0 0 2px;
+	border-bottom: 1px solid #000;
+	font: 400 9px/12px 'OS Retro Geneva';
+}
+.sample {
+	line-height: normal;
+	white-space: nowrap;
+}
+.gap {
+	height: 6px;
+}
+.chicago { font-family: 'OS Retro Chicago'; }
+.geneva { font-family: 'OS Retro Geneva'; }
+
+/* Period UI, to see the faces where they belong. */
+.mock {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	align-items: flex-start;
+}
+.mac {
+	width: 340px;
+	border: 1px solid #000;
+}
+.mac-menu {
+	display: flex;
+	padding: 2px 0;
+	border-bottom: 1px solid #000;
+	font: 400 12px/16px 'OS Retro Chicago';
+}
+.mac-menu span {
+	padding: 0 10px;
+}
+.mac-menu .on {
+	background: #000;
+	color: #fff;
+}
+.mac-desk {
+	display: flex;
+	gap: 28px;
+	padding: 12px 16px;
+	font: 400 9px/12px 'OS Retro Geneva';
+	text-align: center;
+}
+.mac-desk .icon {
+	width: 32px;
+	height: 24px;
+	margin: 0 auto 3px;
+	border: 1px solid #000;
+}
+.mac-desk .name {
+	padding: 0 2px;
+}
+.mac-desk .picked .icon,
+.mac-desk .picked .name {
+	background: #000;
+	color: #fff;
+}
+</style>
+</head>
+<body>
+<h1>Retro 84 pixel fonts</h1>
+
+<section data-font="OS Retro Chicago" data-weight="400" data-size="12">
+	<div class="label"></div>
+	<div class="chicago">
+		<div class="sample" style="font-size: 12px">The quick brown fox jumps over the lazy dog 0123456789</div>
+		<div class="sample" style="font-size: 12px">!"#$%&amp;'()*+,-./:;&lt;=&gt;?@ ABCDEFGHIJKLMNOPQRSTUVWXYZ [\]^_` abcdefghijklmnopqrstuvwxyz {|}~</div>
+		<div class="sample" style="font-size: 12px">¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß àáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ Œœ€™</div>
+		<div class="sample" style="font-size: 12px">File  Edit  View  Special · System Folder · Trash · Posts · Untitled · Welcome to OpenStation</div>
+		<div class="gap"></div>
+		<div class="sample" style="font-size: 24px">The quick brown fox jumps over the lazy dog 0123456789</div>
+		<div class="sample" style="font-size: 24px">File  Edit  View  Special · Untitled · Posts</div>
+		<div class="sample" style="font-size: 36px">Welcome to OpenStation · Größe</div>
+	</div>
+</section>
+
+<section data-font="OS Retro Geneva" data-weight="400" data-size="9">
+	<div class="label"></div>
+	<div class="geneva">
+		<div class="sample" style="font-size: 9px">The quick brown fox jumps over the lazy dog 0123456789</div>
+		<div class="sample" style="font-size: 9px">!"#$%&amp;'()*+,-./:;&lt;=&gt;?@ ABCDEFGHIJKLMNOPQRSTUVWXYZ [\]^_` abcdefghijklmnopqrstuvwxyz {|}~</div>
+		<div class="sample" style="font-size: 9px">¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß àáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ Œœ€™ “”‘’ •…–— ←↑→↓</div>
+		<div class="sample" style="font-size: 9px">File  Edit  View  Special · System Folder · Trash · Posts · Untitled · Welcome to OpenStation</div>
+		<div class="gap"></div>
+		<div class="sample" style="font-size: 18px">The quick brown fox jumps over the lazy dog 0123456789</div>
+		<div class="sample" style="font-size: 18px">System Folder · Empty Folder · 3 items · 280K available</div>
+		<div class="sample" style="font-size: 27px">Welcome to OpenStation · Trash</div>
+	</div>
+</section>
+
+<section class="mock">
+	<div class="mac">
+		<div class="mac-menu"><span>File</span><span class="on">Edit</span><span>View</span><span>Special</span></div>
+		<div class="mac-desk">
+			<div><div class="icon"></div><span class="name">System Folder</span></div>
+			<div class="picked"><div class="icon"></div><span class="name">Posts</span></div>
+			<div><div class="icon"></div><span class="name">Trash</span></div>
+		</div>
+	</div>
+</section>
+
+<script>
+// Fill each label with what the browser actually measured, so a wrong
+// metric or a font that failed to load shows up in the screenshot.
+document.fonts.ready.then( () => {
+	const canvas = document.createElement( 'canvas' ).getContext( '2d' );
+	for ( const section of document.querySelectorAll( 'section[data-font]' ) ) {
+		const { font, weight, size } = section.dataset;
+		const shorthand = `${ weight } ${ size }px '${ font }'`;
+		const probe = document.createElement( 'div' );
+		probe.style.cssText = `font: ${ shorthand }; line-height: normal; position: absolute; visibility: hidden;`;
+		probe.textContent = 'Hg';
+		document.body.appendChild( probe );
+		const lineHeight = probe.getBoundingClientRect().height;
+		probe.remove();
+		canvas.font = shorthand;
+		const m = canvas.measureText( 'H' );
+		const loaded = document.fonts.check( shorthand );
+		section.querySelector( '.label' ).textContent =
+			`${ font } Regular · font-size ${ size }px (also 2x, 3x) · ` +
+			`line-height normal ${ lineHeight }px · ascent ${ m.fontBoundingBoxAscent }px · descent ${ m.fontBoundingBoxDescent }px` +
+			( loaded ? '' : ' · NOT LOADED' );
+	}
+} );
+</script>
+</body>
+</html>
